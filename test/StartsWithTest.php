@@ -8,15 +8,15 @@ class StartsWithTest extends TestCase
 {
     public function test(): void
     {
-        $this->assertTrue(starts_with('foobar', 'foo'));
-        $this->assertTrue(starts_with('foobar', 'f'));
-        $this->assertFalse(starts_with('foobar', 'oobar'));
-        $this->assertFalse(starts_with('foobar', 'foobarb'));
+        $this->assertTrue(startsWith('foobar', 'foo'));
+        $this->assertTrue(startsWith('foobar', 'f'));
+        $this->assertFalse(startsWith('foobar', 'oobar'));
+        $this->assertFalse(startsWith('foobar', 'foobarb'));
     }
 
     public function testEmptyNeedle(): void
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->assertTrue(starts_with('foobar', ''));
+        $this->assertTrue(startsWith('foobar', ''));
     }
 }

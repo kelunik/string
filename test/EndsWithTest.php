@@ -8,15 +8,15 @@ class EndsWithTest extends TestCase
 {
     public function test(): void
     {
-        $this->assertTrue(ends_with('foobar', 'bar'));
-        $this->assertTrue(ends_with('foobar', 'r'));
-        $this->assertFalse(ends_with('foobar', 'fooba'));
-        $this->assertFalse(ends_with('foobar', 'ffoobar'));
+        $this->assertTrue(endsWith('foobar', 'bar'));
+        $this->assertTrue(endsWith('foobar', 'r'));
+        $this->assertFalse(endsWith('foobar', 'fooba'));
+        $this->assertFalse(endsWith('foobar', 'ffoobar'));
     }
 
     public function testEmptyNeedle(): void
     {
         $this->expectException(\InvalidArgumentException::class);
-        $this->assertTrue(ends_with('foobar', ''));
+        $this->assertTrue(endsWith('foobar', ''));
     }
 }

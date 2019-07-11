@@ -2,7 +2,7 @@
 
 namespace Kelunik\String;
 
-function starts_with(string $haystack, string $needle): bool
+function startsWith(string $haystack, string $needle): bool
 {
     if ($needle === '') {
         throw new \InvalidArgumentException('Empty needle');
@@ -11,7 +11,7 @@ function starts_with(string $haystack, string $needle): bool
     return \strncmp($haystack, $needle, \strlen($needle)) === 0;
 }
 
-function ends_with(string $haystack, string $needle): bool
+function endsWith(string $haystack, string $needle): bool
 {
     if ($needle === '') {
         throw new \InvalidArgumentException('Empty needle');

@@ -1,6 +1,6 @@
 <?php
 
-use function Kelunik\String\starts_with;
+use function Kelunik\String\startsWith;
 
 require __DIR__ . '/../vendor/autoload.php';
 
@@ -27,7 +27,7 @@ function testcase(string $haystack, string $needle): void
 
     bench('starts_with(…)', static function () use ($haystack, $needle) {
         for ($i = 0; $i < 1000000; $i++) {
-            starts_with($haystack, $needle);
+            startsWith($haystack, $needle);
         }
     });
 }
