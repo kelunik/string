@@ -6,12 +6,16 @@
 
 `kelunik/string` is a small library containing string helper functions.
 
-**Required PHP Version**
+ - `Kelunik\String\starts_with`
+ - `Kelunik\String\ends_with`
+ - `Kelunik\String\contains`
 
-- PHP 5.4
+## Requirements
 
-**Installation**
+- PHP 7.1
+
+## Installation
 
 ```bash
-$ composer require kelunik/string:dev-master
+composer require kelunik/string
 ```

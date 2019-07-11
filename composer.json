@@ -10,12 +10,13 @@
     ],
     "require": {},
     "require-dev": {
-        "phpunit/phpunit": "^4",
-        "fabpot/php-cs-fixer": "~1.9"
+        "amphp/php-cs-fixer-config": "dev-master",
+        "phpunit/phpunit": "^7 || ^8",
+        "friendsofphp/php-cs-fixer": "^2.15"
     },
     "autoload": {
         "files": [
-            "lib/functions.php"
+            "src/functions.php"
         ]
     }
 }
