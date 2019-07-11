@@ -6,8 +6,8 @@
 
 `kelunik/string` is a small library containing string helper functions.
 
- - `Kelunik\String\starts_with`
- - `Kelunik\String\ends_with`
+ - `Kelunik\String\startsWith`
+ - `Kelunik\String\endsWith`
  - `Kelunik\String\contains`
 
 ## Requirements
